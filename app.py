@@ -6,7 +6,7 @@ import os
 
 load_dotenv()
 
-st.secrets["GOOGLE_API_KEY"]
+HEADS ={st.secrets["GOOGLE_API_KEY"]}
 genai.configure(api_key= os.getenv('GOOGLE_API_KEY'))
 
 def get_response(uploded_file,Job_description):
