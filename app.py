@@ -7,7 +7,7 @@ import os
 load_dotenv()
 
 heads ={st.secrets["GOOGLE_API_KEY"]}
-genai.configure(api_key= os.getenv(heads))
+genai.configure(api_key= os.getenv('heads'))
 
 def get_response(uploded_file,Job_description):
     model = genai.GenerativeModel('gemini-1.5-flash')
